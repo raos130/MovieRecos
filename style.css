@@ -1,0 +1,144 @@
+html,
+body {
+  background-color: #012E08;
+  border: 2px solid #E3BF1D;
+  height: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+
+.fixed-header, .fixed-footer {
+  font-family: 'IBM Plex Mono';
+  display: flex;
+  /* border: 1px solid orange; */
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  width: 100%;
+  color: #E3BF1D;
+  position: fixed;
+  margin-left: 75vw;
+}
+
+.fixed-footer {
+  font-size: 1vw;
+  bottom: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.text {
+  padding-bottom: 1vw;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  color: #E3BF1D;
+  font-family: bely, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.4vw;
+}
+
+h3 {
+  z-index: -2;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  line-height: 10vw;
+  color: #E3BF1D;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-size: 9vw;
+  font-style: normal;
+}
+
+sum {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 43;
+  background-color: #012E08;
+  border: 2px solid #E3BF1D;
+  text-align: left;
+  margin-left: 10vw;
+  margin-right: 45vw;
+  padding: 2px;
+  color: #E3BF1D;
+  font-family: ibm-plex-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  line-height: 2.7vw;
+}
+
+/*
+h4 {
+  text-align: left;
+  margin-top: -16vw;
+  width: 25vw;
+  padding: 2px;
+  margin-left: 5vw;
+  color: #E3BF1D;
+  font-family: ibm-plex-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2vw;
+} */
+/* h3 {
+  text-align: center;
+  padding: 5px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  color: #E3BF1D;
+  font-family: ibm-plex-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2vw;
+  text-decoration: underline;
+} */
+img {
+  border: 2px solid #E3BF1D;
+  display: block;
+  margin-right: auto;
+  width: 50%;
+  margin-left: 40vw;
+}
+
+button {
+  padding: 15px;
+  background-color: #E3BF1D;
+  font-family: bely, sans-serif;
+  margin-right: 1vw;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.4vw;
+  border-radius: 10px;
+  color: #012E08;
+}
+
+#button {
+  padding: 15px;
+  background-color: #E3BF1D;
+  font-family: bely, sans-serif;
+  margin-right: 1vw;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.5vw;
+  border-radius: 10px;
+  color: #012E08;
+}
+
+button:hover {
+  color: #E3BF1D;
+  border: 2px solid #E3BF1D;
+  background-color: #012E08;
+}
+
+.yes {
+  position: fixed;
+  width: 96vw;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
