@@ -7,6 +7,7 @@ function setup() {
   noCanvas();
   strokeWeight(8);
   loadJSON(url, gotData, myFunction);
+  myLink= createElement(r.link.url);
 }
 var r;
 
@@ -22,13 +23,17 @@ function gotData(data) {
 }
 
 function myFunction(data) {
-    createElement('sum', r.summary_short);
-  createElement('sum', r.mpaa_rating);
+// myLink= createElement(r.link.url);
   myDiv2.remove();
+    createImg(r.multimedia.src);
+  createElement('sum', r.summary_short);
+  createElement('mpaa', r.mpaa_rating);
+  // createElement('sum', myLink, r.link.suggested_link_text);
+
 }
 
 
-  // createElement('h2', r.summary_short);
+// createElement('h2', r.summary_short);
 //https://stackoverflow.com/questions/7803814/prevent-refresh-of-page-when-button-inside-form-clicked
 $('#myForm').submit(function() {
   doSomething();
