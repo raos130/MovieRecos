@@ -7,14 +7,14 @@ function setup() {
   noCanvas();
   strokeWeight(8);
   loadJSON(url, gotData, myFunction);
-  myLink= createElement(r.link.url);
 }
+
+// creates a var that randomizes results what the api pulls
 var r;
 
 function gotData(data) {
   var title = data.results;
-  // let r = title[Math.floor(Math.random() * title.length)];
-  // var r = random(title);
+
   r = title[Math.floor(Math.random() * title.length)];
   console.log(r);
 
@@ -22,23 +22,20 @@ function gotData(data) {
   myDiv2 = createImg(r.multimedia.src);
 }
 
+
+// Right button: pulls more content from api and re-organizes the layers.
 function myFunction(data) {
-// myLink= createElement(r.link.url);
+
   myDiv2.remove();
-    createImg(r.multimedia.src);
+  createImg(r.multimedia.src);
   createElement('sum', r.summary_short);
   createElement('mpaa', r.mpaa_rating);
-  // createElement('sum', myLink, r.link.suggested_link_text);
+
 
 }
 
 
-// createElement('h2', r.summary_short);
 //https://stackoverflow.com/questions/7803814/prevent-refresh-of-page-when-button-inside-form-clicked
 $('#myForm').submit(function() {
   doSomething();
 });
-
-
-
-// for (var i = 0; i < title.length; i++)
